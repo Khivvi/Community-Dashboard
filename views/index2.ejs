@@ -1,0 +1,12 @@
+<html>
+    <%- include('./partials/head.ejs') %> 
+    <body>
+        <% if(tables.length>0) { %>
+            <%    tables.forEach(table=>{ %>
+                <h3><%= table.name %></h3> 
+                <h3><%= table.regnum %></h3>
+                <p><%= table.timetable  %> </p>
+              <%  }) %>
+           <% } %>
+    </body>
+</html>

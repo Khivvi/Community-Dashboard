@@ -1,0 +1,30 @@
+<html>
+    <%- include('./partials/head.ejs') %> 
+
+    <body>
+        <div class="parent">
+            <header class="section coral"><h1>Timetable Optimizer</h1></header>
+
+            <div class="left-side section blue">                
+                <a class="directory" href="/index">
+                    Dashboard
+                </a>
+                <a class="directory">Add Timetable</a>
+            </div>
+
+            <form action="/input_page" class="input_field" method="post">
+                <p>
+                    This is the page where you can enter a timetable!
+                </p>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="regnum" placeholder="Registration Number">
+                <input type="text" name="timetable" placeholder="Timetable">
+                <input type="submit" value="Add Timetable">
+            </form>
+
+            <div class="right-side section yellow">Right Sidebar</div>
+
+            <footer class="section coral">Nothing matters</footer>
+          </div>
+    </body>
+</html>
