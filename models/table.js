@@ -10,10 +10,11 @@ const tableSchema = new Schema({
         required:true
     },
     timetable:{
-        type:String,
-        required:true
+        required: true,
+        type:String 
     }
-},{timestamps:true});
+},
+{timestamps:true});
 
 const Table = mongoose.model('Table', tableSchema);
 module.exports=Table;
